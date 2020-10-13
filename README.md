@@ -1,6 +1,6 @@
 
 # CosmicWatch-Desktop-Muon-Detector
-
+THIS VERSION IS CURRENTLY ONLY AVAILABLE TO MIT JLAB STUDENTS.
 This repository if for the supplementary material used to build the CosmicWatch Desktop Muon Detectors V3
 
 ![screes](https://github.com/spenceraxani/CosmicWatch-Desktop-Muon-Detector-v3/blob/master/Pictures/JLAB_array.JPG)
