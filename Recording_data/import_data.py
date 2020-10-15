@@ -151,8 +151,10 @@ if mode == 1:
                 data = globals()['Det%s' % str(i)].readline().decode().replace('\r\n','')    # Wait and read data 
                 data = data.split("\t")
                 ti = str(datetime.now()).split(" ")
-                data[1] = ti[-1]
-                data[2] = ti[0].replace('-','/')
+                comp_time = ti[-1]
+                data[1] = comp_time
+                comp_date = ti[0].split('-')
+                data[2] = comp_date[2] + '/' +comp_date[1] + '/' + comp_date[0] #ti[0].replace('-','/')
                 for j in range(len(data)-1):
                     file.write(data[j]+'\t')
                 file.write("\n")
