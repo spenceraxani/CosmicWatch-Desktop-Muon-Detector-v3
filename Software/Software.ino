@@ -6,7 +6,7 @@
 //   3. SDFat
 
 const boolean RESET_DETECTOR_NAME = false;        // Do you want to update the name of the detector?
-String desired_detector_name      = "Five";     // If so, then to what?
+String desired_detector_name      = "StephenHawking";     // If so, then to what?
 
 int SHIFT_HOUR                    = 0;           // The realtime clock  doesn't understand daylight savings, sometimes you have to shift the hour.
 
