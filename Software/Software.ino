@@ -1,9 +1,9 @@
 // Tools-> Board = Teensy 4.0
 // Tools-> Port = Select the port corresponding to where the detector is plugged in.
 // Libraries needed. Go to Sketch->Include Libraries-> Manage Libraries and install:
-//   1. Adafruit_SSD1306
-//   2. Adafruit_BMP280
-//   3. SDFat
+//   1. Adafruit_SSD1306 : Version 2.4.0
+//   2. Adafruit_BMP280 : Version 2.1.0
+//   3. SDFat : Version 1.1.4
 
 const boolean RESET_DETECTOR_NAME = false;        // Do you want to update the name of the detector?
 String desired_detector_name      = "StephenHawking";     // If so, then to what?
@@ -100,17 +100,17 @@ int chars_in_detector_name = 0;
 // Event buffer information. Each entry in the array will correspond to an event.
 float         event_SiPM_peak_voltage = 0;
 byte          event_coincident = 0;
-unsigned long int event_timestamp = 0;
+unsigned long long event_timestamp = 0;
 float         event_measured_ADC_HGAIN = 0;
 float         event_measured_ADC_LGAIN = 0;
-unsigned int  event_deadtime = 0;
-unsigned int  total_deadtime = 0;
-unsigned long int event_number = 0;
-unsigned long int coincidence_event_number = 0L;   // A tally of the number of coincidence triggers counts observed
+unsigned long long event_deadtime = 0;
+unsigned long long  total_deadtime = 0;
+unsigned long long event_number = 0;
+unsigned long long coincidence_event_number = 0L;   // A tally of the number of coincidence triggers counts observed
 unsigned int event_hour;
 unsigned int event_minute;
 unsigned int event_second;
-unsigned long int event_millis;
+unsigned long long event_millis;
 unsigned int event_year;
 unsigned int event_month;
 unsigned int event_day;
